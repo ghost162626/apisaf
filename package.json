@@ -1,0 +1,16 @@
+{
+  "name": "meu-site-api",
+  "version": "1.0.0",
+  "description": "API para consulta de dados de usuários",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "node api/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.0"
+  }
+}
