@@ -4,8 +4,12 @@
       "maxDuration": 10
     }
   },
-  "rewrites": [
-    { "source": "/", "destination": "/public/index.html" },
-    { "source": "/api/(.*)", "destination": "/api/$1" }
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/discord/(.*)", "dest": "/api/discord/$1" },
+    { "src": "/steam/(.*)", "dest": "/api/steam/$1" },
+    { "src": "/minecraft/(.*)", "dest": "/api/minecraft/$1" },
+    { "src": "/user/(.*)", "dest": "/api/user/$1" },
+    { "src": "/search/(.*)", "dest": "/api/search/$1" }
   ]
 }
